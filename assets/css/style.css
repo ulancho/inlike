@@ -1,0 +1,519 @@
+@font-face {
+	font-family: 'Arial Narrow';
+	src: url('../fonts/../fonts/ArialNarrow-Bold.eot');
+	src: local('../fonts/Arial Narrow Bold'), local('../fonts/ArialNarrow-Bold'),
+	url('../fonts/../fonts/ArialNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/ArialNarrow-Bold.woff') format('woff'),
+	url('../fonts/../fonts/ArialNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/../fonts/Arial-BoldItalicMT.eot');
+	src: local('../fonts/Arial Bold Italic'), local('../fonts/Arial-BoldItalicMT'),
+	url('../fonts/../fonts/Arial-BoldItalicMT.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/Arial-BoldItalicMT.woff') format('woff'),
+	url('../fonts/../fonts/Arial-BoldItalicMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Arial Narrow';
+	src: url('../fonts/../fonts/ArialNarrow.eot');
+	src: local('../fonts/Arial Narrow'), local('../fonts/ArialNarrow'),
+	url('../fonts/../fonts/ArialNarrow.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/ArialNarrow.woff') format('woff'),
+	url('../fonts/../fonts/ArialNarrow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial Narrow';
+	src: url('../fonts/../fonts/ArialNarrow-Italic.eot');
+	src: local('../fonts/Arial Narrow Italic'), local('../fonts/ArialNarrow-Italic'),
+	url('../fonts/../fonts/ArialNarrow-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/ArialNarrow-Italic.woff') format('woff'),
+	url('../fonts/../fonts/ArialNarrow-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/../fonts/ArialMT.eot');
+	src: local('../fonts/Arial'), local('../fonts/ArialMT'),
+	url('../fonts/../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/ArialMT.woff') format('woff'),
+	url('../fonts/../fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/../fonts/Arial-BoldMT.eot');
+	src: local('../fonts/Arial Bold'), local('../fonts/Arial-BoldMT'),
+	url('../fonts/../fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/Arial-BoldMT.woff') format('woff'),
+	url('../fonts/../fonts/Arial-BoldMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/../fonts/Arial-Black.eot');
+	src: local('../fonts/Arial Black'), local('../fonts/Arial-Black'),
+	url('../fonts/../fonts/Arial-Black.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/Arial-Black.woff') format('woff'),
+	url('../fonts/../fonts/Arial-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial Narrow';
+	src: url('../fonts/../fonts/ArialNarrow-BoldItalic.eot');
+	src: local('../fonts/Arial Narrow Bold Italic'), local('../fonts/ArialNarrow-BoldItalic'),
+	url('../fonts/../fonts/ArialNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/../fonts/ArialNarrow-BoldItalic.woff') format('woff'),
+	url('../fonts/../fonts/ArialNarrow-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Monly Serif Lite';
+	src: url('../fonts/MonlySerifLite-Bold.woff2') format('woff2'),
+	url('../fonts/MonlySerifLite-Bold.woff') format('woff'),
+	url('../fonts/MonlySerifLite-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Monly Lite';
+	src: url('../fonts/MonlyLite-Light.woff2') format('woff2'),
+	url('../fonts/MonlyLite-Light.woff') format('woff'),
+	url('../fonts/MonlyLite-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Monly Serif Lite';
+	src: url('../fonts/MonlySerifLite-Light.woff2') format('woff2'),
+	url('../fonts/MonlySerifLite-Light.woff') format('woff'),
+	url('../fonts/MonlySerifLite-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Monly Lite';
+	src: url('../fonts/MonlyLite-Bold.woff2') format('woff2'),
+	url('../fonts/MonlyLite-Bold.woff') format('woff'),
+	url('../fonts/MonlyLite-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+body{
+	font-family: 'Arial';
+	font-weight: normal;
+	font-style: normal;
+}
+body,input{
+	font-size: 16px;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+}
+h1,h2,h3,h4{
+	margin: 0;
+}
+p{
+	margin-top: 0;
+}
+ul,menu{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	outline: none;
+	text-decoration: none;
+	color: inherit;
+}
+button{
+	outline: none;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+}
+a img {
+	border: none;
+}
+img{
+	max-width: 100%;
+}
+input{
+	-webkit-appearance: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+}
+* {
+	outline: none !important;
+	word-wrap: break-word;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+}
+.clearfix:after {
+	clear: both;
+}
+.overflowHid {
+	overflow: hidden;
+}
+.d-flex{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: block;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+}
+.d-none{
+	display: none;
+}
+.d-block{
+	display: block;
+}
+.s-between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.wrapper{
+	width: 100%;
+	max-width: 1164px;
+	margin: 0 auto;
+	padding:0 14px;
+}
+.close-icon{
+	width: 22px;
+	height: 22px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+.close-icon:before,
+.close-icon:after{
+	content:"";
+	width: 1px;
+	height: 13px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.close-icon:before{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-icon:after{
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.sidebar{
+	min-height: 100vh;
+	position: relative;
+	z-index: 3;
+}
+.sidebar__nav{
+	width: 99px;
+	min-height: 100vh;
+	transition: all 0.4s;
+}
+.sidebar__nav-list{
+	width: 99px;
+	padding: 7px;
+	background: #fff;
+	text-align: center;
+	transition: all 0.4s;
+	border-right: 1px solid #e2e2e2;
+}
+.sidebar__nav-icon{
+	width: 29px;
+	height: 29px;
+	margin: 20px 0;
+	display: inline-block;
+	background-image: url(../img/menu-icon.png);
+	background-repeat: no-repeat;
+	transition: all 0.3s;
+}
+.sidebar__nav-users:hover{
+	background-position: -31px 0;
+}
+.sidebar__nav-users.open{
+	background-position: -31px 0;
+}
+.sidebar__nav-open-menu{
+	background-position: 0 -32px;
+}
+.sidebar__nav-open-menu:hover,
+.sidebar__nav-open-menu.open{
+	background-position: -31px -32px;
+}
+.sidebar__nav-dropdown{
+	width: 0;
+	background: #f15d58;
+	transition: all 0.4s;
+}
+.sidebar__nav-dropdown *{
+	visibility: hidden;
+}
+.sidebar__nav-dropdown.open{
+	width: calc(100% - 99px);
+}
+.sidebar__nav-dropdown.open *{
+	visibility: visible;
+}
+.sidebar__nav-dropdown-head{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px 28px;
+}
+.sidebar__nav-dropdown-head h3{
+	font-size: 34px;
+	font-family: 'Monly Lite';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #fff;
+}
+.sidebar__nav-close-menu{
+	margin-left: auto;
+}
+.sidebar__nav.open{
+	width: 346px;
+}
+.nav__scroll-block{
+	height: calc(100vh - 110px);
+	overflow-y: auto;
+}
+.nav__scroll-block::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ffabab;
+}
+.nav__scroll-block::-webkit-scrollbar{
+	width: 4px;
+	background-color: #ffabab;
+}
+.nav__scroll-block::-webkit-scrollbar-thumb{
+	background-color: #b55d5a;
+}
+.dropdown-menu__link{
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	align-items: center;
+	padding: 10px;
+	background: #b5615f;
+}
+.dropdown-menu__link img{
+	margin-right: 10px;
+}
+.dropdown-menu__link:hover{
+	opacity: 0.8;
+}
+.dropdown-menu__link:after{
+	content: "";
+	width: 8px;
+	height: 14px;
+	display: inline-block;
+	background-image: url(../img/arrow-icon.png);
+	margin-left: auto;
+	transition: all 0.3s;
+}
+.dropdown-menu__item.active .dropdown-menu__link:after{
+	transform: rotate(90deg);
+}
+.dropdown-menu-list{
+	display: none;
+	background: #9d201d;
+}
+.dropdown-menu-list.open{
+	display: block;
+}
+.dropdown-menu-list__link{
+	font-size: 12px;
+	color: #fff;
+	align-items: center;
+	padding: 15px 27px;
+	transition: all 0.3s;
+}
+.dropdown-menu-list__link img{
+	margin-left: auto;
+}
+.dropdown-menu-list__link:hover{
+	background: #732422;
+}
+.dropdown-menu.users-nav{
+	display: none;
+}
+.dropdown-menu.users-nav.open{
+	display: block;
+}
+.users-nav.d-block{
+	display: block;
+}
+.main{
+	width: calc(100% - 99px);
+	min-height: 100vh;
+	transition: all 0.4s;
+}
+.main.open-menu{
+	width: calc(100% - 346px);
+}
+.main__head{
+	padding: 19px 28px;
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.35);
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+.user-img{
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-img img{
+	width: 41px;
+	height: 41px;
+	object-fit: cover;
+}
+.user-name{
+	font-size: 34px;
+	font-family: 'Monly Lite';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #000;
+	margin-left: 10px;
+}
+.user-settings{
+	width: 17px;
+	height: 17px;
+	margin-left: 30px;
+	background: none;
+	transition: all 0.4s;
+	background-image: url(../img/settings-icon-s.png);
+}
+.user-logout{
+	width: 22px;
+	height: 22px;
+	margin-left: 30px;
+	background: none;
+	background-image: url(../img/off-icon-s.png);
+	margin-left: auto;
+	transition: all 0.4s;
+}
+.user-settings:hover,
+.user-logout:hover{
+	opacity: 0.5;
+}
+.main__content{
+	width: 100%;
+	height: calc(100vh - 84px);
+	background: #ff5e56;
+	overflow-y: auto;
+}
+.main__content::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ffabab;
+}
+
+.main__content::-webkit-scrollbar{
+	width: 4px;
+	background-color: #ffabab;
+}
+
+.main__content::-webkit-scrollbar-thumb{
+	background-color: #b55d5a;
+}
+.main__content-title{
+	padding: 0 44px;
+	padding-top: 44px;
+	padding-bottom: 96px;
+	background-color: #fff;
+	background-image: url(../image/bg-content.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.main__content-title h1, .content-title h1{
+	font-size: 48px;
+	font-family: 'Monly Lite';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #f15d58;
+}
+.main__content-text{
+	padding: 0 44px;
+	padding-bottom: 44px;
+	font-size: 14px;
+	color: #fff;
+}
+
+/*------------------------------------------- start рабочие страницы ----------------------------------------*/
+.main__content_2{
+	width: 100%;
+	height: calc(100vh - 84px);
+	background: #f9ffeb;
+	overflow-y: auto;
+}
+
+.main__content-title-2{
+	padding: 0 44px;
+	padding-top: 44px;
+	padding-bottom: 25px;
+	background-color: #f9ffeb;
+	text-align: center;
+}
+
+.user-name-2{
+	font-size: 34px;
+	font-family: 'Monly Lite';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #000;
+}
+
+
+/*------------------------------------------- end  рабочие страницы ----------------------------------------*/
+
+@media screen and (max-width: 500px){
+	.main,
+	.main.open-menu{
+		width: calc(100% - 99px);
+		position: absolute;
+		left: 99px;
+		top: 0;
+	}
+}
